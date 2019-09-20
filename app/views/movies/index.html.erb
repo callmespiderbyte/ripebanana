@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="application.css" />
+    <link rel="stylesheet" href="welcome.scss" />
+  </head>
+
+  <body>
+          <header>
+            <div class="logo-container">
+              <div class= "logo" align="center">
+                <%=image_tag "ripebanana-12.png", width: "500" %>
+              </div>
+            </div>
+            <div class="navbarnana" align="center">
+                  <a href="/#homepage"><%=image_tag "ripebanana-06.png", width: "200" %></a>
+                  <a href="/"><%=image_tag "ripebanana-03.png", width: "200" %></a>
+                    <a href="/movies"><%=image_tag "ripebanana-09.png", width: "200" %></a>
+                </div>
+            <div class="topnav">
+                  <a href="/#homepage">home</a>
+                  <%= link_to "add movie", movies_path %>
+                  <a href="/movies">index</a>
+                </div>
+          </header>
+
+      <div class="titlebox" align="center">
+          <h1>Movies</h1>
+              </div>
+
+      <div align="center">
+          <h2><%= @time.strftime "'tis hour %H of year %Y, with %M minutes yonder passed..." %></h2>
+              </div>
+<br>
+  <table>
+
+      <tr>
+          <th> <%= sortable "name" %> </th>
+          <th> <%= sortable "cinematography" %> </th>
+          <th> <%= sortable "scriptwriting" %> </th>
+          <th> <%= sortable "acting" %> </th>
+          <th> <%= sortable "pace" %> </th>
+          <th> <%= sortable "ending" %> </th>
+          <th> <%= sortable "soundtrack" %> </th>
+      </tr>
+  <% @movies.each do |movie| %>
+
+      <tr>
+          <td><i> <%= movie.name %> </i></td>
+          <td> <%= movie.cinematography %> </td>
+          <td> <%= movie.scriptwriting %> </td>
+          <td> <%= movie.acting %> </td>
+          <td> <%= movie.pace %> </td>
+          <td> <%= movie.ending %> </td>
+          <td> <%= movie.soundtrack %> </td>
+          <% end %>
+      </tr>
+  </table>
+
+</body>
+
+
+</html>

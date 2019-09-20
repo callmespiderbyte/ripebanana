@@ -1,0 +1,165 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Add a black background color to the top navigation */
+@import url('https://fonts.googleapis.com/css?family=Dosis:800|Open+Sans|Raleway:800&display=swap');
+
+#navbarnana {
+  width: 100%;
+  height: auto;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav {
+  width: 600px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  display: center;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #250E00;
+  font-family: 'Dosis', sans-serif;
+  font-size: 17px;
+  padding-left: 68px;
+  padding-right: 68px;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #E4BD22;
+}
+
+a.active {
+  text-decoration: none;
+  color: #414042;
+}
+
+#footer {
+  float: left;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 30px;
+  padding: 9px;
+  font-size: 12px;
+  font-family: helvetica;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+#logo-container {
+  margin-top: 0;
+}
+
+#logo {
+
+}
+
+html, body {
+  background-color: #F6E029;
+  padding: 0px;
+  margin: 0px;
+  height: 3000px;
+}
+
+head {
+  background-color: black;
+  float: left;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  float:left;
+  margin: 0;
+  padding: 0;
+}
+
+#titlebox {
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  float: left;
+  border: 1px solid #000000;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+}
+
+h2 {
+  font-family: 'raleway', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+p1 {
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+table {
+  font-family: 'raleway', sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+td, {
+  font-family: arial, sans-serif;
+  padding: 8px;
+  border: 1px solid #000000;
+  font-size: 14px;
+}
+
+th {
+ font-family: 'Raleway';
+ padding: 4px;
+ border: 1px solid #000000;
+ background-color: #FFF4BF;
+ font-size: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #E4BD22;
+}
+
+.pretty th .current {
+  padding-right: 0px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.pretty th .asc {
+  background-image: url(/images/arrow.png);
+  width: 20px;
+  height: 20px;
+}
+
+.pretty th .desc {
+  background-image: url(/images/arrow.png);
+  transform: rotate(180);
+
+}
