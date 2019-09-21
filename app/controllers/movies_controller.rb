@@ -3,8 +3,21 @@ class MoviesController < ApplicationController
 
   def index
     @time = Time.now
-
     @movies = Movie.order(sort_column + ' ' + sort_direction)
+  end
+
+  def show
+  end
+
+  def new
+    @movie = Movie.new
+  end
+
+  def create
+    @movie = Movie.new(params[:movie])
+    if @movie.save
+      redirect_to new_movie_path
+    end
   end
 
   private
@@ -16,13 +29,6 @@ class MoviesController < ApplicationController
       %w[desc asc].include?(params[:direction]) ?  params[:direction] : "desc"
     end
 
-  def show
-  end
 
-  def new
-  end
 
-  def create
-    # ...
-  end
 end

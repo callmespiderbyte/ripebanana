@@ -1,2 +1,113 @@
-<h1>Movies#new</h1>
-<p>Find me in app/views/movies/new.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="application.css" />
+    <link rel="stylesheet" href="welcome.scss" />
+  </head>
+
+  <body>
+          <header>
+            <div class="logo-container">
+              <div class= "logo" align="center">
+                <%=image_tag "ripebanana-12.png", width: "500" %>
+              </div>
+            </div>
+            <div class="navbarnana" align="center">
+                  <a href="/#homepage"><%=image_tag "ripebanana-06.png", width: "200" %></a>
+                  <a href="/movies/new"><%=image_tag "ripebanana-03.png", width: "200" %></a>
+                    <a href="/movies/index"><%=image_tag "ripebanana-09.png", width: "200" %></a>
+                </div>
+            <div class="topnav">
+                  <a href="/#homepage">home</a>
+                  <a href="/movies/new">add movie</a>
+                  <a href="/movies">index</a>
+                </div>
+          </header>
+
+      <div class="titlebox" align="center">
+          <h1>Add a movie</h1>
+              </div>
+
+              <%= form_for :movies do |f| %>
+
+              <div class="formlabel">
+                  <%= f.label 'Title' %>
+                  </div>
+                    <div class="formfield">
+                      <%= f.text_field :name %>
+                      </div>
+                  <br />
+
+              <div class="formlabel">
+                  <%= f.label 'Cinematography' %>
+                  </div>
+                    <div class="formfield">
+                      <%= f.text_field :cinematography %>
+                      </div>
+                  <br />
+
+                  <div class="formlabel">
+                    <%= f.label 'Scriptwriting' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :scriptwriting %>
+                        </div>
+                        </div>
+                  <br />
+
+                  <div class="formlabel">
+                    <%= f.label 'Acting' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :acting %>
+                        </div>
+                  <br />
+
+                  <div class="formlabel">
+                    <%= f.label 'Ending' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :ending %>
+                        </div>
+                  <br />
+
+                  <div class="formlabel">
+                    <%= f.label 'Soundtrack' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :soundtrack %>
+                        </div>
+                  <br />
+
+                  <div class="formlabel">
+                    <%= f.label 'Lead actors ass' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :leadactorsass %>
+                        </div>
+                  <br />
+
+
+                  <div class="formlabel">
+                    <%= f.label 'Called it!-ness' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :calleditness %>
+                        </div>
+                  <br />
+
+
+                  <div class="formlabel">
+                    <%= f.label 'Tropes' %>
+                    </div>
+                      <div class="formfield">
+                        <%= f.text_field :tropes %>
+                        </div>
+                  <br />
+
+
+                  <div class="formfield">
+                    <%= f.submit "ADD MOVIE"%>
+                    </div>
+
+    <% end %>
