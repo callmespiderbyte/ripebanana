@@ -146,20 +146,3 @@ th {
 tr:nth-child(even) {
   background-color: #E4BD22;
 }
-
-.pretty th .current {
-  padding-right: 0px;
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-.pretty th .asc {
-  background-image: url(/images/arrow.png);
-  width: 20px;
-  height: 20px;
-}
-
-.pretty th .desc {
-  background-image: url(/images/arrow.png);
-  transform: rotate(180);
-
-}
